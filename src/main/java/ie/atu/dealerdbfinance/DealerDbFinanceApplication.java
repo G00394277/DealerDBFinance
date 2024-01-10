@@ -6,7 +6,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.cloud.openfeign.FeignClient;
 
 @SpringBootApplication
-@EnableFeignClients
+@FeignClient(name = "DealerDB", url = "http://localhost:8081")
 public class DealerDbFinanceApplication {
 
     public static void main(String[] args) {
